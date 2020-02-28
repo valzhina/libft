@@ -6,13 +6,15 @@
 /*   By: vpiskun <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 11:27:42 by vpiskun           #+#    #+#             */
-/*   Updated: 2020/02/25 14:30:59 by vpiskun          ###   ########.fr       */
+/*   Updated: 2020/02/25 15:36:10 by vpiskun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
+# include <stdlib.h>
+# include <unistd.h>
 
 typedef	struct		s_list
 {

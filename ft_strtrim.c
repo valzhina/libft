@@ -1,31 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vpiskun <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/23 16:59:16 by vpiskun           #+#    #+#             */
-/*   Updated: 2020/02/25 15:36:44 by vpiskun          ###   ########.fr       */
+/*   Created: 2020/02/25 22:54:08 by vpiskun           #+#    #+#             */
+/*   Updated: 2020/02/27 19:00:34 by vpiskun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_strtrim(char const *s)
 {
-	size_t	i;
+	int			len;
+	char const 	*new;
+	int			i;
 
+	if (!s)
+		return (NULL);
+	len = ft_strlen(s);
 	i = 0;
-	while (*s1 && *s2 && i < n)
-	{
-		if (*s1 != *s2)
-			break ;
-		s1++;
-		s2++;
+	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
 		i++;
-	}
-	if (i == n)
-		return (0);
-	return (*(unsigned char*)s1 - *(unsigned char*)s2);
+	while (s[len - 1] == ' ' || s[len - 1] == '\n' || s[len - 1] == '\t')
+		len--;
+	len = len - i;
+	if (len < 0)
+		len = 0;
+	if (!(new = (char*)malloc((len + 1))))
+				return (NULL);
+	ft_strncpy(new, (char*)s + i, len);
+	new[len] = '\0';
+	return (new);
 }
