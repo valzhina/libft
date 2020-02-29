@@ -6,7 +6,7 @@
 /*   By: vpiskun <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 22:54:08 by vpiskun           #+#    #+#             */
-/*   Updated: 2020/02/28 12:45:24 by vpiskun          ###   ########.fr       */
+/*   Updated: 2020/02/28 18:37:38 by vpiskun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strtrim(char const *s)
 {
-	int			len;
-	char const	*new;
-	int			i;
+	int		len;
+	char	*new;
+	int		i;
 
 	if (!s)
 		return (NULL);

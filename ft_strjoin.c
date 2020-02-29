@@ -6,7 +6,7 @@
 /*   By: vpiskun <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 22:38:03 by vpiskun           #+#    #+#             */
-/*   Updated: 2020/02/25 22:53:30 by vpiskun          ###   ########.fr       */
+/*   Updated: 2020/02/28 17:49:33 by vpiskun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int		len1,
+	int		len1;
 	int		len2;
 	char	*s;
 	int		i;
