@@ -6,16 +6,18 @@
 /*   By: vpiskun <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/23 17:50:46 by vpiskun           #+#    #+#             */
-/*   Updated: 2020/02/25 11:55:06 by vpiskun          ###   ########.fr       */
+/*   Updated: 2020/02/28 14:06:24 by vpiskun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_atoi(const char *str)
 {
-	int result = 0;
-	int sign = 1;
+	int result;
+	int sign;
 	int digit;
-
+	
+	result = 0;
+	sign = 1;
 	while (*str && (*str == ' ' || *str == '\n' || *str == '\t' ||
 			*str == '\v' || *str == '\f' || *str == '\r'))
 		++str;
@@ -33,5 +35,5 @@ int		ft_atoi(const char *str)
 		result = result + (digit * sign);
 		str++;
 	}
-	return (result); 
+	return (result);
 }

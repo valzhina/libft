@@ -6,7 +6,7 @@
 /*   By: vpiskun <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 11:27:42 by vpiskun           #+#    #+#             */
-/*   Updated: 2020/02/25 15:36:10 by vpiskun          ###   ########.fr       */
+/*   Updated: 2020/02/28 16:22:20 by vpiskun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,8 @@ size_t				ft_strlcat(char *dest, const char *src, size_t size);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strrchr(const char *str, int c);
 char				*ft_strstr(const char *big, const char *little);
-char				*ft_strnstr(const char *str, const char *needle, size_t len);
+char				*ft_strnstr(const char *str, const char
+					*needle, size_t len);
 int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_atoi(const char *str);

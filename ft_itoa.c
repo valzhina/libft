@@ -6,13 +6,13 @@
 /*   By: vpiskun <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 19:44:55 by vpiskun           #+#    #+#             */
-/*   Updated: 2020/02/27 20:27:11 by vpiskun          ###   ########.fr       */
+/*   Updated: 2020/02/28 12:50:17 by vpiskun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 static int		is_negative(int *str)
 {
-	if	(*str < 0)
+	if (*str < 0)
 	{
 		*str = -(*str);
 		return (1);
@@ -22,10 +22,10 @@ static int		is_negative(int *str)
 
 char			*ft_itoa(int n)
 {
-	int 			len;
+	int				len;
 	int				negative;
 	char			*str;
-	unsigned int 	nb;
+	unsigned int	nb;
 
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));

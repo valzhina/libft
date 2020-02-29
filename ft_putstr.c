@@ -6,7 +6,7 @@
 /*   By: vpiskun <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 19:58:39 by vpiskun           #+#    #+#             */
-/*   Updated: 2020/02/27 20:15:26 by vpiskun          ###   ########.fr       */
+/*   Updated: 2020/02/28 12:39:33 by vpiskun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_putstr(char const *s)
 {
 	if (!s)
-		return;
+		return ;
 	while (*s != '\0')
 	{
 		ft_putchar(*s);

@@ -6,7 +6,7 @@
 /*   By: vpiskun <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 22:54:08 by vpiskun           #+#    #+#             */
-/*   Updated: 2020/02/27 19:00:34 by vpiskun          ###   ########.fr       */
+/*   Updated: 2020/02/28 12:45:24 by vpiskun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strtrim(char const *s)
 {
 	int			len;
-	char const 	*new;
+	char const	*new;
 	int			i;
 
 	if (!s)
@@ -30,7 +30,7 @@ char	*ft_strtrim(char const *s)
 	if (len < 0)
 		len = 0;
 	if (!(new = (char*)malloc((len + 1))))
-				return (NULL);
+		return (NULL);
 	ft_strncpy(new, (char*)s + i, len);
 	new[len] = '\0';
 	return (new);

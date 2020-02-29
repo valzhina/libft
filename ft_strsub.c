@@ -6,7 +6,7 @@
 /*   By: vpiskun <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 22:22:52 by vpiskun           #+#    #+#             */
-/*   Updated: 2020/02/25 22:37:40 by vpiskun          ###   ########.fr       */
+/*   Updated: 2020/02/28 12:42:37 by vpiskun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	char	*str;
-	size_t 	i;
+	size_t	i;
 
 	if (!s)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: vpiskun <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 23:18:41 by vpiskun           #+#    #+#             */
-/*   Updated: 2020/02/27 19:44:07 by vpiskun          ###   ########.fr       */
+/*   Updated: 2020/02/28 12:52:01 by vpiskun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,9 +50,9 @@ static int		ft_length(const char *s, char c)
 
 char			**ft_strsplit(char const *s, char c)
 {
-	char 	**aaa;
-	size_t 	i;
-	int 	j;
+	char	**aaa;
+	size_t	i;
+	int		j;
 
 	j = 0;
 	if (!(aaa = (char**)malloc(sizeof(char*) * ft_word_count(s, c) + 1)))
@@ -68,7 +68,7 @@ char			**ft_strsplit(char const *s, char c)
 			aaa[j][i] = '\0';
 			j++;
 		}
-	} 
+	}
 	aaa[j] = NULL;
 	return (aaa);
 }

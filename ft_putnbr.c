@@ -6,7 +6,7 @@
 /*   By: vpiskun <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 20:08:17 by vpiskun           #+#    #+#             */
-/*   Updated: 2020/02/27 20:11:04 by vpiskun          ###   ########.fr       */
+/*   Updated: 2020/02/28 12:53:19 by vpiskun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	ft_putnbr(int n)
 {
 	char *str;
+
 	str = ft_itoa(n);
 	ft_putstr(s);
 	free(s);
