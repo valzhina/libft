@@ -6,17 +6,17 @@
 /*   By: vpiskun <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 17:28:06 by vpiskun           #+#    #+#             */
-/*   Updated: 2020/03/02 17:45:51 by vpiskun          ###   ########.fr       */
+/*   Updated: 2020/03/02 22:04:32 by vpiskun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft"
+#include "libft.h"
 
 void	ft_lstadd(t_list **alst, t_list *new)
 {
 	if (alst != NULL && new != NULL)
 	{
-		new->next = *alist;
+		new->next = *alst;
 		*alst = new;
 	}
 }
