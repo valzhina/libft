@@ -6,7 +6,7 @@
 /*   By: vpiskun <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 17:15:56 by vpiskun           #+#    #+#             */
-/*   Updated: 2020/03/02 21:14:39 by vpiskun          ###   ########.fr       */
+/*   Updated: 2020/03/03 13:01:30 by vpiskun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@ void	ft_lstdel(t_list **alst, void (*del)(void*, size_t))
 {
 	t_list	*temp;
 
-	while (alst != NULL && del != NULL)
+	while (*alst)
 	{
-		temp = (*alst)->next;
+		temp = (*alst);
 		ft_lstdelone(alst, del);
-		*alst = temp;
+		*alst = temp->next;
 	}
 	*alst = NULL;
 }

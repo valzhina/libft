@@ -6,15 +6,18 @@
 /*   By: vpiskun <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 22:52:31 by vpiskun           #+#    #+#             */
-/*   Updated: 2020/02/27 22:54:38 by vpiskun          ###   ########.fr       */
+/*   Updated: 2020/03/03 13:21:12 by vpiskun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_strclr(char *s)
 {
-	while (*s)
+	char *ptr;
+
+	ptr = s;
+	while (ptr && *ptr)
 	{
-		*s = '\0';
-		s++;
+		*ptr = 0;
+		ptr++;
 	}
 }

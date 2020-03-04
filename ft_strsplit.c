@@ -6,7 +6,7 @@
 /*   By: vpiskun <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 23:18:41 by vpiskun           #+#    #+#             */
-/*   Updated: 2020/02/28 18:27:45 by vpiskun          ###   ########.fr       */
+/*   Updated: 2020/03/03 13:30:46 by vpiskun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,8 @@ char			**ft_strsplit(char const *s, char c)
 	int		j;
 
 	j = 0;
-	if (!(aaa = (char**)malloc(sizeof(char*) * ft_word_count(s, c) + 1)))
+	if (!s || !c ||
+			!(aaa = (char**)malloc(sizeof(char*) * ft_word_count(s, c) + 1)))
 		return (NULL);
 	while (*s != '\0')
 	{

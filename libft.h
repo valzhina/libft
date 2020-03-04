@@ -6,7 +6,7 @@
 /*   By: vpiskun <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 11:27:42 by vpiskun           #+#    #+#             */
-/*   Updated: 2020/02/28 16:22:20 by vpiskun          ###   ########.fr       */
+/*   Updated: 2020/03/03 17:30:22 by vpiskun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,4 +82,9 @@ void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+int					ft_abs(int n);
+int					ft_islower(int c);
+int					ft_isupper(int c);
+int					ft_pow(int x, int y);
+int					ft_skip_char(char **ptr, char c);
 #endif
